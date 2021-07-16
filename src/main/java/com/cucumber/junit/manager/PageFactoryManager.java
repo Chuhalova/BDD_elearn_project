@@ -1,5 +1,6 @@
 package com.cucumber.junit.manager;
 
+import com.cucumber.junit.pages.ArticlePage;
 import com.cucumber.junit.pages.DocsPage;
 import com.cucumber.junit.pages.HomePage;
 import org.openqa.selenium.WebDriver;
@@ -17,5 +18,9 @@ public class PageFactoryManager {
 
     public static DocsPage getDocsPage() {
         return new DocsPage(driver);
+    }
+
+    public static ArticlePage getArticlePage() {
+        return new ArticlePage(driver);
     }
 }
